@@ -34,7 +34,7 @@
            revision="refs/heads/udc" />
 
   <!-- GitHub (Evolution X) -->
-  <remote  name="evo-pixel"
+  <remote  name="evo-2-pixel"
            fetch="https://github.com/Evolution-X"
            revision="refs/heads/u-p" />
 
@@ -54,7 +54,7 @@
            revision="refs/heads/uqpr2" />
 
   <!-- Device repos -->
-  <project path="device/evolution/sepolicy" name="device_evolution_sepolicy" remote="evo-2" />
+  <project path="device/evolution/sepolicy" name="device_evolution_sepolicy" remote="evo-2-pixel" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" groups="qcom,sdm660" remote="evo" /> 
 
   <!-- External repos -->
@@ -85,7 +85,7 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="manifest" name="manifest" remote="evo-2" />
+  <project path="manifest" name="manifest" remote="evo-2-pixel" />
 
   <!-- Hardware repos -->
   <project path="hardware/evolution/interfaces" name="hardware_evolution_interfaces" remote="evo-2" />
@@ -134,7 +134,7 @@
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="evo-2" />
 
   <!-- System repos -->
-  <project path="system/core" name="system_core" remote="evo-2" />
+  <project path="system/core" name="system_core" remote="evo-2-pixel" />
   <project path="system/extras" name="system_extras" remote="evo-2" />
   <project path="system/libhidl" name="system_libhidl" remote="evo-2" />
   <project path="system/libhwbinder" name="system_libhwbinder" remote="evo-2" />
@@ -154,6 +154,6 @@
   <project path="vendor/certification" name="vendor_certification" remote="evo-bb" />
   <project path="vendor/evolution" name="vendor_evolution" remote="evo-2" />
   <project path="vendor/google/interfaces" name="TheParasiteProject/vendor_google_interfaces" revision="main" remote="github" />
-  <project path="vendor/gms" name="vendor_gapps" groups="vendor" remote="evo-bb-2" clone-depth="1" />
+  <project path="vendor/gms" name="vendor_gapps" groups="vendor" revision="uqpr2-p" remote="evo-bb-2" clone-depth="1" />
   <!--<project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="evo" />-->
 </manifest> 
