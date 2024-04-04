@@ -30,7 +30,7 @@ Once you have chosen a source branch, you can proceed with the synchronization u
 ```bash
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
-**Note:** To save space and reduce download time during the synchronization process, you can also pass `--depth 1` to the `repo sync` command. However, using `--depth 1` will result in the repositories being synced without any commit history.
+**Note:** To save space and reduce download time during the synchronization process, you can also pass `--depth 1` to the `repo init` command. However, using `--depth 1` will result in the repositories being synced without any commit history.
 
 ### Evolution X Build Flags ###
 
